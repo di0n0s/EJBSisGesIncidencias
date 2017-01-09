@@ -77,6 +77,17 @@ public class Incidencias implements Serializable {
         this.detalle = detalle;
     }
 
+    public Incidencias(Integer idIncidencia, String fechaHora, String tipo, String detalle, Empleados origen, Empleados destino) {
+        this.idIncidencia = idIncidencia;
+        this.fechaHora = fechaHora;
+        this.tipo = tipo;
+        this.detalle = detalle;
+        this.origen = origen;
+        this.destino = destino;
+    }
+    
+    
+
     public Integer getIdIncidencia() {
         return idIncidencia;
     }
@@ -147,7 +158,9 @@ public class Incidencias implements Serializable {
 
     @Override
     public String toString() {
-        return "Entities.Incidencias[ idIncidencia=" + idIncidencia + " ]";
+        return "Incidencia{" + "idIncidencia=" + idIncidencia + ", fechaHora=" + fechaHora + ", tipo=" + tipo + ", detalle=" + detalle + ", origen=" + origen + ", destino=" + destino + '}';
     }
+
+
     
 }

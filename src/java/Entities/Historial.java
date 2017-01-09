@@ -67,6 +67,15 @@ public class Historial implements Serializable {
         this.fechaHora = fechaHora;
     }
 
+    public Historial(Integer idIncidencia, String tipoEvento, String fechaHora, Empleados username) {
+        this.idIncidencia = idIncidencia;
+        this.tipoEvento = tipoEvento;
+        this.fechaHora = fechaHora;
+        this.username = username;
+    }
+    
+    
+
     public Integer getIdIncidencia() {
         return idIncidencia;
     }
@@ -121,7 +130,9 @@ public class Historial implements Serializable {
 
     @Override
     public String toString() {
-        return "Entities.Historial[ idIncidencia=" + idIncidencia + " ]";
+        return "Historial{" + "idIncidencia=" + idIncidencia + ", tipoEvento=" + tipoEvento + ", fechaHora=" + fechaHora + ", username=" + username + '}';
     }
+
+
     
 }

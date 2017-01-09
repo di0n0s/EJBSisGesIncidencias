@@ -159,7 +159,9 @@ public class Empleados implements Serializable {
 
     @Override
     public String toString() {
-        return "Empleado[ username=" + username + " ]";
+        return "Empleado{" + "username=" + username + ", password=" + password + ", nombreCompleto=" + nombreCompleto + ", telefono=" + telefono + '}';
     }
+
+
     
 }
